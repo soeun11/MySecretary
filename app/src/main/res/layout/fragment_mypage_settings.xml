@@ -1,0 +1,139 @@
+<!-- res/layout/fragment_mypage_settings.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 상단 타이틀 -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="마이페이지"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- 탭 버튼 -->
+    <LinearLayout
+        android:id="@+id/tab_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tab_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="프로필"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/tab_settings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="설정"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:background="?attr/selectableItemBackground" />
+    </LinearLayout>
+
+    <!-- 설정 내용 -->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="아이디"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="저장된이메일"
+            android:enabled="false"
+             />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="전화번호"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="010 - 1234 - 5678"
+            android:enabled="false"
+             />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 변경"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/password_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint=""
+             />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#CCE2CB"
+            android:text="저장"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- 하단 버튼 -->
+    <LinearLayout
+        android:id="@+id/bottom_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp">
+
+        <Button
+            android:id="@+id/terms_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회원약관"
+
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그아웃"
+
+            android:textColor="#FF0000" />
+
+        <Button
+            android:id="@+id/delete_account_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회원 탈퇴"
+            android:textColor="#FF0000" />
+    </LinearLayout>
+</LinearLayout>
